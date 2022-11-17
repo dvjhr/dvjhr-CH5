@@ -2,7 +2,17 @@ public class tugas2b {
     
     public static void main(String[] args) {
         
+        Vehicle kendaraan = new Vehicle();
+        Car mobil = new Car();
+        HondaJazz Jazz = new HondaJazz();
+        TototaFortuner Fortuner = new TototaFortuner();
+        SuzukiKatana Katana = new SuzukiKatana();
         
+        kendaraan.maju();
+        mobil.maju();
+        Jazz.maju();
+        Fortuner.maju();
+        Katana.maju();
 
     }
 
@@ -64,7 +74,7 @@ class HondaJazz extends Car {
     
     public void maju() {
         
-        System.out.println("Mobil bergerak maju");
+        System.out.println("Mobil Jazz bergerak maju");
 
     }
     
@@ -84,6 +94,68 @@ class HondaJazz extends Car {
         
         System.out.println("Mobil" + hlg + "menghilang");
 
+    }
+
+}
+
+class TototaFortuner extends Car {
+
+    int roda = 4;
+    int tangki = 3;
+    
+    public void maju() {
+        
+        System.out.println("Mobil Fortuner bergerak maju");
+
+    }
+    
+    public void mundur() {
+        
+        System.out.println("Mobil bergerak mundur");
+
+    }
+    
+    public void belok(String blk) {
+        
+        System.out.println("Mobil berbelok ke  " + blk);
+
+    }
+    
+    public void menghilang(String hlg) {
+        
+        System.out.println("Mobil" + hlg + "menghilang");
+        
+    }
+
+}
+
+class SuzukiKatana extends Car {
+
+    int roda = 4;
+    int tangki = 4;
+    
+    public void maju() {
+        
+        System.out.println("Mobil Katana bergerak maju");
+
+    }
+    
+    public void mundur() {
+        
+        System.out.println("Mobil bergerak mundur");
+
+    }
+    
+    public void belok(String blk) {
+        
+        System.out.println("Mobil berbelok ke  " + blk);
+
+    }
+    
+    public void menghilang(String hlg) {
+        
+        System.out.println("Mobil" + hlg + "menghilang");
+        
     }
 
 }
